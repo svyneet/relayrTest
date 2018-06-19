@@ -17,7 +17,6 @@ public class GoogleDetailPage  extends Actions {
 	public GoogleDetailPage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
-		// TODO Auto-generated constructor stub
 	}
 	
 	@FindBy(xpath = "//button[@name='btnG']")
@@ -26,6 +25,7 @@ public class GoogleDetailPage  extends Actions {
 	@FindBy(xpath = "//div[@class='rc']//h3[@class='r']")
 	public List<WebElement> searchResults;
 
+	//Error Messages displayed on invalid input
 	@FindBy(xpath = "//div[@class='med card-section']")
 	public WebElement errorMessages;
 	
@@ -38,7 +38,7 @@ public class GoogleDetailPage  extends Actions {
 		return searchResultsInString;
 	}
 	
-	public String getErrorMessages()
+	public String getErrorMessage()
 	{
 		return errorMessages.getText();
 	}

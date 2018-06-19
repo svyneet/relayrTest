@@ -41,7 +41,8 @@ public class GoogleSearchTest extends Test_Base {
 		implicitWait(1);
 		googlePage.setGoogleSearchBoxValue(valid);
 		googlePage.pressEnter();
-		listOfResults = googleDetailPage.getGoogleSearchResults();
+		
+		listOfResults = googleDetailPage.getGoogleSearchResults(); // contains the title of the results displayed on Google search page
 		for(String result: listOfResults)
 		{
 			System.out.println(result);
@@ -57,17 +58,16 @@ public class GoogleSearchTest extends Test_Base {
 		GooglePage googlePage = new GooglePage(this.driver);
 		GoogleDetailPage googleDetailPage = new GoogleDetailPage(this.driver);
 
-		String valid = "2198379821 ewrsdlsaweioqr";
-		ArrayList<String> listOfResults;
+		String invalid = "2198379821 ewrsdlsaweioqr";
 		implicitWait(1);
-		googlePage.setGoogleSearchBoxValue(valid);
+		googlePage.setGoogleSearchBoxValue(invalid);
 		googlePage.pressEnter();
 		implicitWait(2);
-		Assert.assertTrue(googleDetailPage.getErrorMessages().contains(GoogleDetailPage.ErrorMessage.Suggestion));
-		Assert.assertTrue(googleDetailPage.getErrorMessages().contains(GoogleDetailPage.ErrorMessage.Suggestion1));
-		Assert.assertTrue(googleDetailPage.getErrorMessages().contains(GoogleDetailPage.ErrorMessage.Suggestion2));
-		Assert.assertTrue(googleDetailPage.getErrorMessages().contains(GoogleDetailPage.ErrorMessage.Suggestion3));
-		Assert.assertTrue(googleDetailPage.getErrorMessages().contains(GoogleDetailPage.ErrorMessage.Suggestion4));
+		Assert.assertTrue(googleDetailPage.getErrorMessage().contains(GoogleDetailPage.ErrorMessage.Suggestion));
+		Assert.assertTrue(googleDetailPage.getErrorMessage().contains(GoogleDetailPage.ErrorMessage.Suggestion1));
+		Assert.assertTrue(googleDetailPage.getErrorMessage().contains(GoogleDetailPage.ErrorMessage.Suggestion2));
+		Assert.assertTrue(googleDetailPage.getErrorMessage().contains(GoogleDetailPage.ErrorMessage.Suggestion3));
+		Assert.assertTrue(googleDetailPage.getErrorMessage().contains(GoogleDetailPage.ErrorMessage.Suggestion4));
 		
 	}
 
