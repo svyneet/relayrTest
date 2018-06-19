@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13156" started-at="2018-06-16T19:19:59Z" finished-at="2018-06-16T19:20:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13156" started-at="2018-06-16T19:19:59Z" finished-at="2018-06-16T19:20:12Z">
+      <class name="tests.GoogleSearchTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.GoogleSearchTest@18301ea4]" name="setup" is-config="true" duration-ms="4419" started-at="2018-06-16T21:19:59Z" finished-at="2018-06-16T21:20:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="redirectToHome()[pri:0, instance:tests.GoogleSearchTest@18301ea4]" name="redirectToHome" is-config="true" duration-ms="1624" started-at="2018-06-16T21:20:03Z" finished-at="2018-06-16T21:20:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirectToHome -->
+        <test-method status="PASS" signature="verifySearchBarFunctionalityWithInvalidInputs()[pri:0, instance:tests.GoogleSearchTest@18301ea4]" name="verifySearchBarFunctionalityWithInvalidInputs" duration-ms="2283" started-at="2018-06-16T21:20:05Z" finished-at="2018-06-16T21:20:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchBarFunctionalityWithInvalidInputs -->
+        <test-method status="PASS" signature="redirectToHome()[pri:0, instance:tests.GoogleSearchTest@18301ea4]" name="redirectToHome" is-config="true" duration-ms="256" started-at="2018-06-16T21:20:07Z" finished-at="2018-06-16T21:20:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirectToHome -->
+        <test-method status="PASS" signature="verifySearchBarFunctionalityWithValidInputs()[pri:0, instance:tests.GoogleSearchTest@18301ea4]" name="verifySearchBarFunctionalityWithValidInputs" duration-ms="1405" started-at="2018-06-16T21:20:07Z" finished-at="2018-06-16T21:20:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchBarFunctionalityWithValidInputs -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:tests.GoogleSearchTest@18301ea4]" name="cleanUp" is-config="true" duration-ms="3152" started-at="2018-06-16T21:20:09Z" finished-at="2018-06-16T21:20:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- tests.GoogleSearchTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
